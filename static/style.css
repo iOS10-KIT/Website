@@ -250,8 +250,14 @@ footer {
 }
 
 @media (max-width: 1000px) {
-
   #hero-header {
     background-size: 1440px;
+  }
+}
+
+@media (max-height: 1000px) {
+  #hero-header {
+    background-size: auto 1000px;
+    height: 700px;
   }
 }
