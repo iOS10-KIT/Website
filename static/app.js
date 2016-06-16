@@ -26,13 +26,15 @@ document.addEventListener("DOMContentLoaded", function() {
     var maximumHorizontal = window.innerWidth / 2;
     var mouseX = event.clientX;
     var mouseY = event.clientY;
+    var delimiter = 20;
+    var percentageChange = 1;
 
-    if (maximumVertical - 100 >= mouseY && maximumVertical + 100 <= mouseY
-    && maximumHorizontal - 100 >= mouseX && maximumHorizontal + 100 <= mouseX) {
-      console.log('Center');
-    }
+    if (mouseY > maximumVertical * 2) { return; }
 
-    mouseEffectImage.style.backgroundPosition = "50% 100%";
+    var x = 50 - (mouseX - maximumHorizontal) * percentageChange / maximumHorizontal;
+    var y = 100 - (mouseY - maximumVertical) * percentageChange / maximumVertical;
+
+    mouseEffectImage.style.backgroundPosition = x + "% " + y + "%" ;
   }
 
   function updatePicture() {
