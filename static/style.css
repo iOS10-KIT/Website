@@ -82,7 +82,7 @@ a {
 
 #hero-header {
   position: relative;
-  background-image: url("../resources/header_full.jpg");
+  background-image: url("../resources/header.png");
   background-size: 150vw;
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -124,8 +124,8 @@ a {
 
 #parallax-wrapper {
   position: absolute;
-  background-image: url("../resources/header_full.jpg");
-  background-size: 200vw;
+  background-image: url("../resources/header.png");
+  background-size: 150vw;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -206,7 +206,7 @@ footer {
 }
 
 #credit-container {
-  margin-top: 250px;
+  margin-top: 350px;
   transform: translateY(-50%);
 }
 
@@ -281,6 +281,16 @@ footer {
 
   #footer-wrapper {
     height: 300px;
+  }
+
+  #key-points-table {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #key-points {
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 
   #credit-container {
