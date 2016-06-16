@@ -80,7 +80,7 @@ body {
   background-image: url("../resources/header.png");
   background-size: 150vw;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: 50% 100%;
   width: 100vw;
   height: 110vh;
   top: 0;
@@ -148,8 +148,8 @@ body {
 }
 
 .key-point-images {
-  width: 120px;
-  height: 120px;
+  width: 154px;
+  height: 154px;
 }
 
 .key-point-explanations {
