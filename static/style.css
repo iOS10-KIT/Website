@@ -14,15 +14,17 @@ body {
   background: -moz-linear-gradient(top, #FFFFFF 0%, #FEFEFE 75%, #EFEFEF 100%);
   background: -webkit-linear-gradient(top, #FFFFFF 0%, #FEFEFE 75%, #EFEFEF 100%);
   background: linear-gradient(to bottom, #FFFFFF 0%, #FEFEFE 75%, #EFEFEF 100%);
+  padding-bottom: 100px;
 }
 
 .header {
   font-weight: 200;
+  letter-spacing: -1px;
   font-size: 95px;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 0px;
-  color: #4A4A4A;
+  color: black;
 }
 
 .description {
@@ -39,20 +41,26 @@ body {
   width: 38px;
   height: 3px;
   background-color: #DBDBDB;
-  margin-top: 40px;
+  margin-top: 50px;
   margin-bottom: 50px;
   margin-left: 50%;
   transform: translateX(-50%);
+}
+
+.general-text {
+  margin: 0 auto;
+  font-size: 13px;
+  color: #E1E1E1;
 }
 
 .button {
   width: 220px;
   height: 55px;
   background: none;
-  border: 2px solid #4A4A4A;
-  border-radius: 3px;
+  border: 2px solid #343434;
+  border-radius: 10px;
   color: white;
-  background-color: #4A4A4A;
+  background-color: #343434;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -92,9 +100,30 @@ body {
   transform: translateX(-50%);
 }
 
-#hero-explanation #download-button {
-  margin-top: 80px;
-  margin-bottom: 40px;
-  margin-left: 50%;
-  transform: translateX(-50%);
+#hero-button-container {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+#hero-button-container #last-updated {
+  margin-top: 8px;
+}
+
+/* Parallax */
+
+#parallax-container {
+  position: relative;
+  width: 100vw;
+  height: 475px;
+}
+
+#parallax-wrapper {
+  position: absolute;
+  background-image: url("../resources/header.png");
+  background-size: 150vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
 }
