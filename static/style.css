@@ -16,6 +16,11 @@ body {
   background: linear-gradient(to bottom, #FFFFFF 0%, #FEFEFE 75%, #EFEFEF 100%);
 }
 
+a {
+  text-decoration: none;
+  color: #4A4A4A;
+}
+
 .header {
   font-weight: 200;
   letter-spacing: -1px;
@@ -272,6 +277,14 @@ footer {
 
   #footer-image-right {
     visibility: hidden;
+  }
+
+  #footer-wrapper {
+    height: 300px;
+  }
+
+  #credit-container {
+    margin-top: 100px;
   }
 }
 
