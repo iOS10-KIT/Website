@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     && convertPercentage(window.scrollY) <= parallaxRect.top + 600) {
       window.requestAnimationFrame(updatePicture)
     } else {
-      parallaxBackground.style.backgroundPosition = "0% 20%";
+      parallaxBackground.style.backgroundPosition = "50% 20%";
     }
   }
 
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function updatePicture() {
     var percentage = convertPercentage(window.scrollY) / (parallaxRect.top - 400);
-    parallaxBackground.style.backgroundPosition = "50% " + percentage * 35 + "%";
+    parallaxBackground.style.backgroundPosition = "50% " + percentage * 30 + "%";
   }
 
   function convertPercentage(percentage) {
