@@ -181,23 +181,23 @@ footer {
 }
 
 .footer-images {
-  width: 375px;
+  width: 350px;
 }
 
 #footer-image-left {
   position: absolute;
   top: 10px;
-  left: -125px;
+  left: -100px;
 }
 
 #footer-image-right {
   position: absolute;
   top: 200px;
-  right: -150px;
+  right: -125px;
 }
 
 #credit-container {
-  margin-top: 300px;
+  margin-top: 250px;
   transform: translateY(-50%);
 }
 
@@ -247,4 +247,11 @@ footer {
 .share-images {
   width: 80px;
   height: 80px;
+}
+
+@media (max-width: 1000px) {
+
+  #hero-header {
+    background-size: 1440px;
+  }
 }
