@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function updatePicture() {
     var percentage = convertPercentage(window.scrollY) / (parallaxRect.top - 400);
-    parallaxBackground.style.backgroundPosition = "0% " + percentage * 30 + "%";
+    parallaxBackground.style.backgroundPosition = "50% " + percentage * 35 + "%";
   }
 
   function convertPercentage(percentage) {
