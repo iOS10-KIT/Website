@@ -82,7 +82,7 @@ a {
 
 #hero-header {
   position: relative;
-  background-image: url("../resources/header.png");
+  background-image: url("../resources/header.jpg");
   background-size: 150vw;
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -124,7 +124,7 @@ a {
 
 #parallax-wrapper {
   position: absolute;
-  background-image: url("../resources/header.png");
+  background-image: url("../resources/header.jpg");
   background-size: 150vw;
   background-repeat: no-repeat;
   background-position: center;
