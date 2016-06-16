@@ -65,8 +65,8 @@ body {
   font-size: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: all 0.3s ease-in;
   cursor: pointer;
+  transition: all 0.3s ease-in;
 }
 
 .button:hover {
