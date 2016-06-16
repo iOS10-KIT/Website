@@ -125,7 +125,7 @@ a {
 #parallax-wrapper {
   position: absolute;
   background-image: url("../resources/header_full.jpg");
-  background-size: 150vw;
+  background-size: 200vw;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
