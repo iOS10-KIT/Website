@@ -2,6 +2,12 @@
 
 /* General */
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+
+* {
+  font-family: -apple-system, 'Helvetica', 'Open Sans', sans-serif;
+}
+
 body {
   margin: 0 auto;
   min-height: 100vh;
@@ -10,17 +16,85 @@ body {
   background: linear-gradient(to bottom, #FFFFFF 0%, #FEFEFE 75%, #EFEFEF 100%);
 }
 
+.header {
+  font-weight: 200;
+  font-size: 95px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  color: #4A4A4A;
+}
+
+.description {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: -0.4px;
+  color: #B0B0B0;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.separator {
+  width: 38px;
+  height: 3px;
+  background-color: #DBDBDB;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.button {
+  width: 220px;
+  height: 55px;
+  background: none;
+  border: 2px solid #4A4A4A;
+  border-radius: 3px;
+  color: white;
+  background-color: #4A4A4A;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #4A4A4A;
+  background-color: transparent;
+}
+
 /* Top explanation */
 
 #hero-header {
+  position: relative;
   background-image: url("../resources/header.png");
   background-size: 150vw;
   background-repeat: no-repeat;
   background-position: bottom;
   width: 100vw;
-  height: 85vh;
+  height: 110vh;
+  top: 0;
+  transform: translateY(-20vh);
+  overflow-x: hidden;
 }
 
-#hero-explanation {
+#hero-title {
+  margin-top: -17.5vh;
+}
 
+#hero-description {
+  width: 60vw;
+  max-width: 1000px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+#hero-explanation #download-button {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
