@@ -114,6 +114,15 @@ a {
   margin-top: 8px;
 }
 
+#last-updated {
+  margin-top: 8px;
+  color: #E1E1E1;
+}
+
+#last-updated-link {
+  color: #E1E1E1;
+}
+
 /* Parallax */
 
 #parallax-container {
