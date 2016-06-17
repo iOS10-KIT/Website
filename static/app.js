@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
   var parallaxBackground = document.getElementById('parallax-wrapper');
   var mouseEffectImage = document.getElementById('hero-header');
   var parallaxRect = parallaxBackground.getBoundingClientRect();
+  var downloadButton = document.getElementById('download-button');
+
+  downloadButton.addEventListener('click', trackDownloads);
 
   window.requestAnimationFrame = window.requestAnimationFrame
   || window.webkitRequestAnimationFrame
@@ -31,6 +34,14 @@ document.addEventListener("DOMContentLoaded", function() {
     var y = 100 - (mouseY - maximumVertical) * percentageChange / maximumVertical;
 
     mouseEffectImage.style.backgroundPosition = x + "% " + y + "%" ;
+  }
+
+  function trackDownloads() {
+    ga('send', {
+      hitType: 'click',
+      eventCategory: 'Download',
+      eventAction: 'Download'
+    });
   }
 
   function updatePicture() {
