@@ -87,14 +87,8 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 100%;
   width: 100vw;
-  height: 110vh;
+  height: 90vh;
   top: 0;
-  transform: translateY(-20vh);
-  overflow-x: hidden;
-}
-
-#hero-title {
-  margin-top: -17.5vh;
 }
 
 #hero-description {

@@ -26,11 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var maximumHorizontal = window.innerWidth / 2;
     var mouseX = event.clientX;
     var mouseY = event.clientY;
-    var delimiter = 20;
-    var percentageChange = 1;
-
-    if (mouseY > maximumVertical * 2) { return; }
-
+    var percentageChange = 0.1;
     var x = 50 - (mouseX - maximumHorizontal) * percentageChange / maximumHorizontal;
     var y = 100 - (mouseY - maximumVertical) * percentageChange / maximumVertical;
 
