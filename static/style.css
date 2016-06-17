@@ -283,6 +283,7 @@ footer {
 
   #footer-wrapper {
     height: 300px;
+    width: 100vw;
   }
 
   #key-points-table {
@@ -306,7 +307,21 @@ footer {
   }
 
   .key-point-explanations {
-    width: 100%;
     margin-bottom: 50px;
+  }
+
+  .key-point-images {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  #footer-wrapper {
+    margin-top: -75px;
+  }
+
+  #credit-container h3 {
+    font-size: 13px;
+    margin-top: 0px;
   }
 }
