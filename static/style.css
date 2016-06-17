@@ -87,11 +87,11 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 100%;
   width: 100vw;
-  height: 80vh;
+  height: 70vh;
 }
 
 #hero-description {
-  width: 60vw;
+  width: 80vw;
   max-width: 1000px;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -300,9 +300,13 @@ footer {
   }
 }
 
-@media (max-height: 1000px) {
-  #hero-header {
-    background-size: auto 1000px;
-    height: 700px;
+@media (max-width: 500px) {
+  #hero-title {
+    font-size: 70px;
+  }
+
+  .key-point-explanations {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
