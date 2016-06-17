@@ -32,8 +32,8 @@ a {
 }
 
 .description {
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 18px;
   line-height: 34px;
   letter-spacing: -0.4px;
   color: #B0B0B0;
