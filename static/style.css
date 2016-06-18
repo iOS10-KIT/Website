@@ -32,8 +32,7 @@ a {
   font-weight: 200;
   letter-spacing: -1px;
   font-size: 95px;
-  margin-top: 30px;
-  margin-bottom: 0px;
+  margin: 30px 0 0;
   color: black;
 }
 
@@ -175,13 +174,13 @@ footer {
 #footer-image-left {
   position: absolute;
   top: 10px;
-  left: 0px;
+  left: 0;
 }
 
 #footer-image-right {
   position: absolute;
   top: 200px;
-  right: 0px;
+  right: 0;
 }
 
 #credit-container {
@@ -214,8 +213,8 @@ footer {
 }
 
 #credit-container h3 a:hover:after {
-  left: 0%;
-  right: 0%;
+  left: 0;
+  right: 0;
 }
 
 #share-table {
@@ -292,6 +291,6 @@ footer {
 
   #credit-container h3 {
     font-size: 13px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
