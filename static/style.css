@@ -310,7 +310,7 @@ footer {
   }
 
   .key-point-images {
-    margin-left: 7.5%;
+    margin-left: 0%;
     transform: translateX(0);
   }
 }
@@ -336,6 +336,11 @@ footer {
 
   #footer-wrapper {
     margin-top: -75px;
+  }
+
+  .share-images {
+    width: 70px;
+    height: 70px;
   }
 
   #credit-container h3 {
