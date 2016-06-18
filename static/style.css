@@ -165,12 +165,6 @@ a {
   overflow: hidden;
 }
 
-#key-points-table div:after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
 #key-points-table div div {
   width: 100%;
 }
@@ -310,12 +304,9 @@ footer {
   #credit-container {
     margin-top: 100px;
   }
-}
 
-@media (max-width: 800px) {
   #key-points-table div {
-    width: 85%;
-    max-width: 85%;
+    width: 90%;
   }
 
   .key-point-images {
