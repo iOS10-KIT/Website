@@ -41,10 +41,9 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function trackDownloads() {
-    ga('send', {
-      hitType: 'click',
+    ga('send', 'event' {
       eventCategory: 'Download',
-      eventAction: 'Download'
+      eventAction: 'click'
     });
   }
 
