@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
   window.onscroll = function() {
     var box = parallaxBackground.getBoundingClientRect();
     var value = box.top - window.innerHeight;
-    var delimiter = 50;
+    var delimiter = 100;
 
     if (value - delimiter < 0
       && value + parallaxHeight + window.innerHeight + delimiter > 0) {
