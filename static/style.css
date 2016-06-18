@@ -6,14 +6,20 @@
 
 * {
   font-family: -apple-system, 'Helvetica', 'Open Sans', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0 auto;
   min-height: 100vh;
+  max-width: 100vw;
   background: -moz-linear-gradient(top, #FFFFFF 0%, #FEFEFE 75%, #EFEFEF 100%);
   background: -webkit-linear-gradient(top, #FFFFFF 0%, #FEFEFE 75%, #EFEFEF 100%);
   background: linear-gradient(to bottom, #FFFFFF 0%, #FEFEFE 75%, #EFEFEF 100%);
+}
+
+html {
+  max-width: 100vw;
 }
 
 a {
@@ -32,8 +38,8 @@ a {
 }
 
 .description {
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 18px;
   line-height: 34px;
   letter-spacing: -0.4px;
   color: #B0B0B0;
@@ -87,18 +93,11 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 100%;
   width: 100vw;
-  height: 110vh;
-  top: 0;
-  transform: translateY(-20vh);
-  overflow-x: hidden;
-}
-
-#hero-title {
-  margin-top: -17.5vh;
+  height: 70vh;
 }
 
 #hero-description {
-  width: 60vw;
+  width: 80vw;
   max-width: 1000px;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -148,23 +147,34 @@ a {
 }
 
 #key-points-table {
+  position: relative;
   width: 100%;
-  height: 100%;
   max-width: 1000px;
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
   margin-left: 50%;
   transform: translateX(-50%);
+  overflow: hidden;
 }
 
-#key-points-table tr td {
-  padding-top: 30px;
+#key-points-table div {
+  display: inline-block;
+  float: center;
   text-align: center;
+  width: 33%;
+  overflow: hidden;
+}
+
+#key-points-table div div {
+  width: 100%;
 }
 
 .key-point-images {
   width: 154px;
   height: 154px;
+  margin: 0 auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .key-point-explanations {
@@ -175,14 +185,16 @@ a {
   width: 80%;
   text-align: center;
   margin-top: 0px;
+  margin-bottom: 40px;
   margin-left: 50%;
   transform: translateX(-50%);
+  white-space: normal;
 }
 
 /* Footer */
 
 footer {
-  margin-top: 40px;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -255,11 +267,11 @@ footer {
 }
 
 #share-table tr td a img {
-  transition: all 0.2s ease-in;
+  transition: all 0.15s ease-in;
 }
 
 #share-table tr td a img:hover {
-  transform: scale(0.9);
+  transform: scale(1.2);
 }
 
 .share-images {
@@ -276,10 +288,6 @@ footer {
     background-size: 1440px;
   }
 
-  #key-points-table tr td {
-    display: table-row;
-  }
-
   #footer-image-left {
     visibility: hidden;
   }
@@ -290,26 +298,53 @@ footer {
 
   #footer-wrapper {
     height: 300px;
-  }
-
-  #key-points-table {
-    margin-left: 50%;
-    transform: translateX(-50%);
-  }
-
-  #key-points {
-    margin-left: 50%;
-    transform: translateX(-50%);
+    width: 100vw;
   }
 
   #credit-container {
     margin-top: 100px;
   }
+
+  #key-points-table div {
+    width: 90%;
+  }
+
+  .key-point-images {
+    margin-left: 0%;
+    transform: translateX(0);
+  }
 }
 
-@media (max-height: 1000px) {
-  #hero-header {
-    background-size: auto 1000px;
-    height: 700px;
+@media (max-width: 500px) {
+  #hero-title {
+    font-size: 70px;
+  }
+
+  .key-point-explanations {
+    margin-bottom: 50px;
+  }
+
+  .key-point-images {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  #key-points-table div {
+    width: 90%;
+  }
+
+  #footer-wrapper {
+    margin-top: -75px;
+  }
+
+  .share-images {
+    width: 70px;
+    height: 70px;
+  }
+
+  #credit-container h3 {
+    font-size: 13px;
+    margin-top: 0px;
   }
 }

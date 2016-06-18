@@ -1,8 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
 
   var parallaxBackground = document.getElementById('parallax-wrapper');
+  var parallaxHeight = parallaxBackground.clientHeight;
   var mouseEffectImage = document.getElementById('hero-header');
-  var parallaxRect = parallaxBackground.getBoundingClientRect();
+  var downloadButton = document.getElementById('download-button');
+
+  downloadButton.addEventListener('click', trackDownloads);
 
   window.requestAnimationFrame = window.requestAnimationFrame
   || window.webkitRequestAnimationFrame
@@ -12,8 +15,12 @@ document.addEventListener("DOMContentLoaded", function() {
   || function(callback) { window.setTimeout(callback, 1000 / 60) };
 
   window.onscroll = function() {
-    if (convertPercentage(window.scrollY) >= parallaxRect.top - 1000
-    && convertPercentage(window.scrollY) <= parallaxRect.top + 600) {
+    var box = parallaxBackground.getBoundingClientRect();
+    var value = box.top - window.innerHeight;
+    var delimiter = 100;
+
+    if (value - delimiter < 0
+      && value + parallaxHeight + window.innerHeight + delimiter > 0) {
       window.requestAnimationFrame(updatePicture)
     } else {
       parallaxBackground.style.backgroundPosition = "50% 20%";
@@ -26,20 +33,30 @@ document.addEventListener("DOMContentLoaded", function() {
     var maximumHorizontal = window.innerWidth / 2;
     var mouseX = event.clientX;
     var mouseY = event.clientY;
-    var delimiter = 20;
-    var percentageChange = 1;
-
-    if (mouseY > maximumVertical * 2) { return; }
-
+    var percentageChange = 0.1;
     var x = 50 - (mouseX - maximumHorizontal) * percentageChange / maximumHorizontal;
     var y = 100 - (mouseY - maximumVertical) * percentageChange / maximumVertical;
 
     mouseEffectImage.style.backgroundPosition = x + "% " + y + "%" ;
   }
 
+  function trackDownloads() {
+    ga('send', {
+      hitType: 'click',
+      eventCategory: 'Download',
+      eventAction: 'Download'
+    });
+  }
+
   function updatePicture() {
-    var percentage = convertPercentage(window.scrollY) / (parallaxRect.top - 400);
-    parallaxBackground.style.backgroundPosition = "50% " + percentage * 30 + "%";
+    var box = parallaxBackground.getBoundingClientRect();
+    var value = box.top - window.innerHeight;
+    var bottom = parallaxHeight + window.innerHeight;
+    var minimum = 20;
+    var maximum = 60;
+    var formula = (Math.abs(value) * maximum + minimum * bottom - minimum * Math.abs(value)) / bottom;
+
+    parallaxBackground.style.backgroundPosition = "50% " + formula + "%";
   }
 
   function convertPercentage(percentage) {
