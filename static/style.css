@@ -240,7 +240,7 @@ footer {
   }
 
   #credit-container {
-    margin-top: 125px;
+    margin-top: 50px;
   }
 
   #key-points-table div {
@@ -278,6 +278,10 @@ footer {
   .share-images {
     width: 70px;
     height: 70px;
+  }
+
+  #credit-container {
+    margin-top: 85px;
   }
 
   #credit-container h3 {
